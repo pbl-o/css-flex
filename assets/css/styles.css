@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans Regular", sans-serif;
+  color: #1b1f21;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  text-align: center;
+}
+/*CONTACTOS (IZQ)*/
+.container-aside {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 1px solid #bec1bb;
+}
+
+.container-aside img {
+  width: 16%;
+  border-radius: 50%;
+  padding: 3.5%;
+}
+
+/*header de usuario*/
+
+.container-aside .header-usuario img {
+  width: 25%;
+}
+
+.header-usuario {
+  display: flex;
+  border-bottom: 1px solid #bec1bb;
+  justify-content: start;
+  align-items: center;
+  padding: 1%;
+  gap: 1%;
+}
+
+.header-usuario .info-usuario .credenciales {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header-usuario .info-usuario .credenciales p {
+  color: #828485;
+}
+
+.header-usuario .info-usuario,
+.botones-usuario {
+  border: hidden;
+}
+
+.header-usuario .botones-usuario {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-usuario .botones-usuario i {
+  color: #828485;
+  font-size: 1.7rem;
+  transition: 0.4s ease-in-out;
+  margin: .7rem;
+}
+
+.header-usuario .botones-usuario i:hover {
+  color: #bec1bb;
+}
+
+/*botón de acción (CHAT)*/
+
+.boton-nuevo-chat {
+  padding: 10%;
+}
+
+.boton-nuevo-chat button {
+  padding: 5% 20%;
+  background-color: #a491d2;
+  color: #fff;
+  margin: 5% 0;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+  border: none;
+  border-radius: 2px;
+}
+
+.boton-nuevo-chat button:hover {
+  background-color: #cdc3e6;
+  cursor: pointer;
+}
+
+.boton-nuevo-chat button:active {
+  background-color: #bec1bb;
+}
+
+/*Contactos*/
+
+.container-aside .contenedor-contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.container-aside .item-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #bec1bb;
+  min-width: 100%;
+}
+
+.container-aside .item-contacto .credenciales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 70%;
+  color: #444749;
+}
+
+.container-aside .item-contacto .credenciales h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 0.4rem;
+}
+
+/*----------------------------------------------------------*/
+
+/*LOGO (DER)*/
+.container-content {
+  background-color: #e8ebe4;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo-card : contenedor principal
+///////////////////////////////  */
+.logo-card {
+  width: 50%;
+  padding: 2%;
+}
+
+/*Imagen*/
+.logo-img img {
+  width: 40%;
+  padding: 2%;
+}
+
+/*card body*/
+.logo-card-body {
+  background-color: none;
+}
+
+.logo-card-title {
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.logo-card-text {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 0 5.3rem;
+  line-height: 1.9;
+}
+
+.logo-card-text span {
+  font-weight: 600;
+}
+
+/*---------------------------------------------------------------*/
+
+/*media queries*/
+
+@media (max-width: 1500px) {
+  .container-aside {
+    width: 30%;
+  }
+
+  .container-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+
+  .container-content {
+    min-width: 100%;
+  }
+
+  .logo-card {
+    width: 70%;
+  }
+
+  .logo-card img {
+    width: 50%;
+  }
+
+  .container-aside {
+    width: 100%;
+  }
+
+  .container-aside img {
+    width: 11%;
+    border-radius: 50%;
+    padding: 4%;
+  }
+
+  .container-aside .header-usuario img {
+    width: 14%;
+  }
+
+  .header-usuario {
+    padding: 1%;
+    gap: 1%;
+  }
+
+  .header-usuario .botones-usuario {
+    width: 30%;
+  }
+
+  .header-usuario .botones-usuario i {
+    font-size: 1.9rem;
+    margin: .7rem;
+  }
+
+
+  /*botón de acción (CHAT)*/
+
+  .boton-nuevo-chat {
+    padding: 10%;
+  }
+
+  .boton-nuevo-chat button {
+    padding: 5% 15%;
+  }
+
+  /*Contactos*/
+
+  .container-aside .item-contacto {
+    width: 90%;
+  }
+
+  .container-aside .item-contacto .credenciales {
+    width: 90%;
+  }
+
+  .boton-nuevo-chat {
+    padding: 5%;
+  }
+
+  /*texto DER*/
+
+  .logo-card-text {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    margin: 0 2.3rem;
+    line-height: 1.9;
+  }
+}
