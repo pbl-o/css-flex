@@ -82,14 +82,17 @@ html {
 /*botón de acción (CHAT)*/
 
 .boton-nuevo-chat {
-  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
 }
 
 .boton-nuevo-chat button {
   padding: 5% 20%;
   background-color: #a491d2;
   color: #fff;
-  margin: 5% 0;
+
   font-size: 1rem;
   transition: 0.3s ease-in-out;
   border: none;
@@ -249,7 +252,7 @@ html {
   /*botón de acción (CHAT)*/
 
   .boton-nuevo-chat {
-    padding: 10%;
+   margin: 8%;
   }
 
   .boton-nuevo-chat button {
